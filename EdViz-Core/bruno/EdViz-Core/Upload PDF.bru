@@ -1,0 +1,23 @@
+meta {
+  name: Upload PDF
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/upload-pdf
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Content-Type: multipart/form-data
+}
+
+body:multipart-form {
+  file: @file(G:\My Drive\Grad school\פרוייקט\syllabus calculus 2.pdf) @contentType(application/pdf)
+}
+
+body:file {
+  file: @file(G:\My Drive\Grad school\פרוייקט\AI types.pdf) @contentType(application/pdf)
+}

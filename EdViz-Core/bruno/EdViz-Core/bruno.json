@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "EdViz-Core",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

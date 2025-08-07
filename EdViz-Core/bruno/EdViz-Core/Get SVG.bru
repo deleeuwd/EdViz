@@ -1,0 +1,11 @@
+meta {
+  name: Get SVG
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8000/get-svg/{{file_id}}
+  body: none
+  auth: inherit
+}
